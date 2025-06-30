@@ -342,4 +342,25 @@ input:focus, textarea:focus {
 .golden-toast .Toastify__toast-icon svg {
   fill: gold !important;
 }
+.logout-btn {
+  background-color: #222;
+  color: gold;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+.logout-btn:hover {
+  background-color: gold;
+  color: #000;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 

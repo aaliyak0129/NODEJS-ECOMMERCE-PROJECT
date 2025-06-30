@@ -5,7 +5,6 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { FaCrown } from "react-icons/fa";
 
 const AdminLogin = () => {
   const [adminId, setAdminId] = useState("");
@@ -18,35 +17,31 @@ const AdminLogin = () => {
 
     const api = `${BackEndUrl}/admin/adminlogin`;
 
-   try {
-  const response = await axios.post(api, {
-    adminId: adminId,
-    password: password
-  });
+    try {
+      const response = await axios.post(api, {
+        adminId: adminId,
+        password: password
+      });
+toast.success("Login successful!", {
+  className: "golden-toast",
+  bodyClassName: "golden-toast-body",
+  progressClassName: "golden-toast-progress",
+  position: "top-right",
+  autoClose: 3000,
+  closeOnClick: true,
+  pauseOnHover: true
+});
+      navigate('/admindash');
 
-  if (response.data.success) {
-    toast.success(response.data.msg || "Login successful", {
-      className: "golden-toast",
-      bodyClassName: "golden-toast-body",
-      progressClassName: "golden-toast-progress"
-    });
-    navigate('/admindash');
-  } else {
-    toast.error(response.data.msg || "Login failed", {
-      className: "golden-toast",
-      bodyClassName: "golden-toast-body",
-      progressClassName: "golden-toast-progress"
-    });
-  }
-
-} catch (error) {
-  toast.error(error?.response?.data?.msg || "Login failed", {
-    className: "golden-toast",
-    bodyClassName: "golden-toast-body",
-    progressClassName: "golden-toast-progress"
-  });
+    } catch (error) {
+      console.error(error?.response?.data?.msg || "Login failed");
+toast.error("Login failed!", {
+  className: "golden-toast",
+  bodyClassName: "golden-toast-body",
+  progressClassName: "golden-toast-progress"
+});
 }
-  }
+  };
 
   return (
     <div className="login-container">

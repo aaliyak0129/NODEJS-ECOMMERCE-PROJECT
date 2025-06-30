@@ -21,3 +21,5 @@ app.listen(Port, ()=>{
     console.log(`server run on ${Port}!!`);
     
 })
+const uploadRoute = require("./routes/uploadRoute");
+app.use("/api", uploadRoute);
