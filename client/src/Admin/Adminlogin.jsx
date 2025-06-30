@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import BackEndUrl from '../Utils/BackEndUrl';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AdminLogin = () => {
   const [adminId, setAdminId] = useState("");
@@ -10,7 +12,7 @@ const AdminLogin = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // ✅ Call this first
+    e.preventDefault();
     console.log(adminId, password);
 
     const api = `${BackEndUrl}/admin/adminlogin`;
@@ -20,14 +22,25 @@ const AdminLogin = () => {
         adminId: adminId,
         password: password
       });
-
-      console.log(response.data.msg);
+toast.success("Login successful!", {
+  className: "golden-toast",
+  bodyClassName: "golden-toast-body",
+  progressClassName: "golden-toast-progress",
+  position: "top-right",
+  autoClose: 3000,
+  closeOnClick: true,
+  pauseOnHover: true
+});
       navigate('/admindash');
 
     } catch (error) {
       console.error(error?.response?.data?.msg || "Login failed");
-      alert(error?.response?.data?.msg || "Login failed");
-    }
+toast.error("Login failed!", {
+  className: "golden-toast",
+  bodyClassName: "golden-toast-body",
+  progressClassName: "golden-toast-progress"
+});
+}
   };
 
   return (

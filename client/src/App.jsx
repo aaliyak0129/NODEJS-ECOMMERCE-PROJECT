@@ -4,10 +4,13 @@ import Home from "./Pages/Home";
 import Layout from "./Layout";
 import AdminLogin from "./Admin/Adminlogin";
 import AdminDash from "./Admin/AdminDash";
-
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
+    <>
+    
+      <ToastContainer />
 <Routes>
   <Route path="/" element={<Layout />}>
     <Route index element={<Home />} /> 
@@ -17,6 +20,7 @@ function App() {
   </Route>
     
 </Routes>
+</>
   );
 }
 
