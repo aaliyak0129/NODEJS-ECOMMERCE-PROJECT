@@ -4,14 +4,14 @@ import { useState } from "react";
 
 const AdminDash = () => {
   const [products, setProducts] = useState([
-    { id: 1, name: "Gold Ring", price: "4999", quantity: 10 },
-    { id: 2, name: "Diamond Necklace", price: "15999", quantity: 5 },
+    { id: 1, name: "Gold Ring", price: "4999", Quantity: 10 },
+    { id: 2, name: "Diamond Necklace", price: "15999", Quantity: 5 },
   ]);
 
   const [newProduct, setNewProduct] = useState({
     name: "",
     price: "",
-    stock: "",
+    Quantity: "",
   });
 
   const handleChange = (e) => {
@@ -19,10 +19,10 @@ const AdminDash = () => {
   };
 
   const handleAdd = () => {
-    if (!newProduct.name || !newProduct.price || !newProduct.stock) return;
+    if (!newProduct.name || !newProduct.price || !newProduct.Quantity) return;
     const id = products.length + 1;
     setProducts([...products, { id, ...newProduct }]);
-    setNewProduct({ name: "", price: "", stock: "" });
+    setNewProduct({ name: "", price: "", Quantity: "" });
   };
 
   const handleDelete = (id) => {
@@ -50,9 +50,9 @@ const AdminDash = () => {
               onChange={handleChange}
             />
             <input
-              name="stock"
-              placeholder="Stock"
-              value={newProduct.stock}
+              name="Quantity"
+              placeholder="Quantity"
+              value={newProduct.Quantity}
               onChange={handleChange}
             />
             <input
@@ -71,12 +71,12 @@ const AdminDash = () => {
                      <th>Image</th>
                 <th>Name</th>
                 <th>Price</th>
-                <th>Stock</th>
+                <th>Quantity</th>
                 <th>Actions</th>
               </tr>
             </thead>
             <tbody>
-              {products.map(({ id, name, price, quantity,image }) => (
+              {products.map(({ id, name, price, Quantity,image }) => (
                 <tr key={id}>
                   <td>{id}</td>
                         <td>
@@ -84,7 +84,7 @@ const AdminDash = () => {
                 </td>
                   <td>{name}</td>
                   <td>₹{price}</td>
-                  <td>{quantity}</td>
+                  <td>{Quantity}</td>
                   <td>
                     <button onClick={() => handleDelete(id)}>🗑 Delete</button>
                   </td>

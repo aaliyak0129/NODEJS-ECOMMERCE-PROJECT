@@ -31,6 +31,7 @@ toast.success("Login successful!", {
   closeOnClick: true,
   pauseOnHover: true
 });
+
       navigate('/admindash');
 
     } catch (error) {

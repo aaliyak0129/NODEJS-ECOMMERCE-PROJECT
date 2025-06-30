@@ -91,3 +91,23 @@ color: #201f1f;
 .golden-toast-progress {
   background: gold;
 }
+/* Custom Toast Base */
+.golden-toast {
+  background-color: black !important;
+  color: gold !important;
+  border: 1px solid gold;
+  border-radius: 8px;
+  font-family: 'Outfit', sans-serif;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Toast Body Text */
+.golden-toast-body {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Toast Progress Bar */
+.golden-toast-progress {
+  background: gold !important;
+}
