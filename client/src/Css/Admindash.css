@@ -338,3 +338,8 @@ input:focus, textarea:focus {
   border-color: #b8860b;
   outline: none;
 } 
+/* Override success icon color */
+.golden-toast .Toastify__toast-icon svg {
+  fill: gold !important;
+}
+
