@@ -98,12 +98,12 @@
   overflow: hidden;
 
 }
-.background-box:hover {
-  transform: scale(1.1);
+/* .background-box:hover { */
+  /* transform: scale(1.1);
 }
 .background-box:hover img {
   transform: scale(1.1);
-}
+} */
 
 
 .center-text {
@@ -308,7 +308,7 @@
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  color: #007bff;
+  color: #f8b400;
   font-size: 13px;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -323,8 +323,8 @@
 
 .gallery-card {
   position: relative;
-  width: 250px;
-  height: 350px;
+  width: 260px;
+  height:450px;
   /* margin: 0 5px; */
   overflow: hidden;
   cursor: pointer;
@@ -346,11 +346,13 @@
   bottom: 0;
   width: 100%;
   padding: 6px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  background: rgba(251, 219, 194, 0.308);
+color: #080808e0;
   font-size: 14px;
   text-align: center;
   z-index: 2;
+  font-weight:bold;
+  font-Size:15px;
 }
 
 .gallery-hover-text {
@@ -360,7 +362,7 @@
   transform: translateX(-50%);
   width: 90%;
   background: rgba(255, 255, 255, 0.9);
-  color: #333;
+  color:rgb(2, 2, 2);
   font-size: 12px;
   padding: 6px;
   text-align: center;

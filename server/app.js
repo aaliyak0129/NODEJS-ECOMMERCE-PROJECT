@@ -23,3 +23,8 @@ app.listen(Port, ()=>{
 })
 const uploadRoute = require("./routes/uploadRoute");
 app.use("/api", uploadRoute);
+const razorpayRoutes = require('./routes/razorpayRoutes');
+app.use('/api/razorpay', razorpayRoutes);
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`))

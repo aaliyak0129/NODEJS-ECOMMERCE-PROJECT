@@ -1,0 +1,299 @@
+.checkout-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.checkout-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.checkout-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.quantity-control button {
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  margin-left: 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quantity-control span {
+  font-weight: bold;
+  font-size: 10px;
+}
+.remove-btnn {
+  color: rgb(255, 251, 251);
+
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.checkout-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Outfit', sans-serif;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.checkout-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.empty-msg {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+.checkout-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.checkout-img {
+  width: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.checkout-info {
+  flex: 1;
+}
+
+.checkout-info h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.price {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.quantity-controls button {
+  padding: 6px 12px;
+  font-size: 16px;
+  border: none;
+  background-color: #eee;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-controls button:hover:not(:disabled) {
+  background-color: #ccc;
+}
+
+.quantity-controls button:disabled {
+  background-color: #f5f5f5;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #e60000;
+}
+
+.checkout-summary {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.checkout-summary h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.checkout-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.primary-btn {
+  background-color: #222;
+  color: #fff;
+}
+
+.secondary-btn {
+  background-color: #ddd;
+  color: #222;
+}
+
+.primary-btn:hover {
+  background-color: #000;
+}
+
+.secondary-btn:hover {
+  background-color: #bbb;
+}
+    .primary-btn {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.primary-btn:hover {
+  background-color: #444;
+}
+.checkout-input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+
+.checkout-container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #b8870b51;
+}
+
+.checkout-form input {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+}
+
+.checkout-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 50px;
+}
+
+.checkout-table th,
+.checkout-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.checkout-table img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+
+.total-text {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.checkout-container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.checkout-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.checkout-table th,
+.checkout-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-size: 18px;
+  color: #B8860B;
+  text-align: center;
+}
+
+.remove-btn {
+  background-color: #B8860B;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+.remove-btn:hover{
+    color: rgba(4, 4, 4, 0.97);
+    background-color: #B8860B;
+}
+.place-order-btn {
+  background-color: #B8860B;
+  color: white;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

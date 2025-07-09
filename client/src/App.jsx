@@ -5,7 +5,7 @@ import Layout from "./Layout";
 import AdminLogin from "./Admin/Adminlogin";
 import AdminDash from "./Admin/AdminDash";
 import { ToastContainer } from 'react-toastify';
-
+import Checkout from './Pages/Checkout'
 function App() {
   return (
     <>
@@ -16,10 +16,11 @@ function App() {
     <Route index element={<Home />} /> 
   <Route path="/adminlogin" element={<AdminLogin/>}/>
   <Route path="/admindash" element={<AdminDash/>}/>
-
+      <Route path="/checkout" element={<Checkout />} />
   </Route>
     
 </Routes>
+
 </>
   );
 }

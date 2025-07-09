@@ -48,7 +48,7 @@ const AdminDash = () => {
       try {
         setUploadProgress(0);
         const cloudRes = await axios.post(
-          `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`,
+          `https://api.cloudinary.com/v1_1/${"dqd5l02w7"}/image/upload`,
           formData,
           {
             onUploadProgress: (progressEvent) => {
